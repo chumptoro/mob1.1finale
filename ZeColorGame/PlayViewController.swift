@@ -111,7 +111,7 @@ class PlayViewController: UIViewController {
         button.isEnabled = false
         yesButton.isEnabled = false
         noButton.isEnabled = false
-        timeLabel.textColor = UIColor(name: "teal")
+        timeLabel.textColor = UIColor(name: "blue")
         
         gameInt = 5
         timeLabel.text = String(gameInt)
