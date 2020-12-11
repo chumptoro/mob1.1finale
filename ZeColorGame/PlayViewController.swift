@@ -53,7 +53,9 @@ class PlayViewController: UIViewController {
     @IBAction func tapMeButton(_ sender: Any) {
         tapInt += 1
         scoreLabel.text = String(tapInt)
+    
     }
+    
     
     @objc func startGameTimer() {
         startInt -= 1
@@ -62,6 +64,7 @@ class PlayViewController: UIViewController {
         if startInt == 0 {
             startTimer.invalidate()
             button.setTitle("Go!", for: .normal)
+            
             yesButton.isEnabled = true
             noButton.isEnabled = true
             
@@ -75,7 +78,20 @@ class PlayViewController: UIViewController {
         gameInt -= 1
         timeLabel.text = String(gameInt)
         
-         
+        if gameInt == 0 {
+            timeLabel.text = String("finished!")
+            yesButton.isEnabled = false
+            noButton.isEnabled = false
+            gameTimer.invalidate()
+            
+            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(PlayViewController.end), userInfo: nil, repeats: false)
+            
+        }
+    }
+    
+    @objc func end() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "endGame") as! EndViewController
+        self.present(vc, animated: false, completion: nil)
     }
     /*
     // MARK: - Navigation

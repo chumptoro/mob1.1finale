@@ -17,6 +17,7 @@
 		D3D08D6B257EDD7C00747790 /* ZeColorGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D08D6A257EDD7C00747790 /* ZeColorGameUITests.swift */; };
 		D3D08D7C257EDE8E00747790 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D08D7B257EDE8E00747790 /* HomeViewController.swift */; };
 		D3D08D81257EDEAB00747790 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D08D80257EDEAB00747790 /* PlayViewController.swift */; };
+		D3D08D87258308DE00747790 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D08D86258308DE00747790 /* EndViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D3D08D6C257EDD7C00747790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D08D7B257EDE8E00747790 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D3D08D80257EDEAB00747790 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		D3D08D86258308DE00747790 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		D3D08D47257EDD7B00747790 /* ZeColorGame */ = {
 			isa = PBXGroup;
 			children = (
+				D3D08D86258308DE00747790 /* EndViewController.swift */,
 				D3D08D48257EDD7B00747790 /* AppDelegate.swift */,
 				D3D08D4A257EDD7B00747790 /* SceneDelegate.swift */,
 				D3D08D4C257EDD7B00747790 /* ViewController.swift */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D08D87258308DE00747790 /* EndViewController.swift in Sources */,
 				D3D08D4D257EDD7B00747790 /* ViewController.swift in Sources */,
 				D3D08D81257EDEAB00747790 /* PlayViewController.swift in Sources */,
 				D3D08D49257EDD7B00747790 /* AppDelegate.swift in Sources */,
